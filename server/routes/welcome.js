@@ -4,7 +4,7 @@ router.post("/",async (req,res)=>{
     try {
         logger.info("welcome inside user");
     } catch (error) {
-        logger.error(error);
+        console.log(error);
     }
 })
 module.exports = router;
