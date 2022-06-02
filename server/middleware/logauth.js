@@ -1,5 +1,4 @@
 const jwt=require("jsonwebtoken");
-const User= require("../models/user");
 const JWTPRIVATEKEY='dhsgkjljhgsdofghwoiitjwefnsdfjkhdfoidf';
 
 exports.isAuthenticatedUser = async(req,res,next)=>{
