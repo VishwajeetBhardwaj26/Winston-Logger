@@ -1,5 +1,9 @@
 const router = require("express").Router();
-router.get("/",(req,res)=>{
-    res.send("You are an authorized customer and this is your cart kindly add and remove items from cart");
+router.post("/",async (req,res)=>{
+    try {
+        res.send("welcome to your cart");
+    } catch (error) {
+        console.log(error);
+    }
 })
-module.exports=router;
+module.exports = router;
